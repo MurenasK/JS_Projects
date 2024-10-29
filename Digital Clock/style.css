@@ -1,0 +1,26 @@
+body
+{
+    background-image: url(./pomidorai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#clock-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock
+{
+    font-family: monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    color: white;
+    background-color: rgba(211, 211, 211, 0.179);
+}

@@ -1,0 +1,102 @@
+body 
+{
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ff6b6b, #f7d794, #ff6b6b);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation 
+{
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.main-container
+{
+    background-image: url('./cards/450641628_1018354066506716_2477937250757877163_n.jpg');
+    background-size: 50%;
+    background-color:rgb(236, 240, 240);
+    height: 80vh;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+input
+{
+    width: 75px;
+}
+
+#cards-container img
+{
+    height: 150px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.label
+{
+    background-color: lightgrey;
+    margin: 0px 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover, :focus
+{
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+button:active
+{
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+
+}
+
+.textas {
+    font-size: 20px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.textas:hover,
+.textas:focus {
+    color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.textas:active {
+    color: rgba(255, 255, 255, 0.6);
+    transform: scale(1);
+}
